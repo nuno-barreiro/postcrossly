@@ -22,21 +22,24 @@ linter:
   # producing the lint.
   rules:
     # Documentation / API hygiene
-    public_member_api_docs: true        # require docs on public members
     comment_references: true           # prefer using [Type] references in docs
+    public_member_api_docs: true        # require docs on public members
 
     # Type-safety / explicitness (helps docs and readability)
     always_declare_return_types: true
-    always_specify_types: true
+    always_specify_types: false
     annotate_overrides: true
+    type_annotate_public_apis: true
 
     # Style & readability
+    directives_ordering: true
     prefer_final_locals: true
     prefer_const_constructors: true
     prefer_const_declarations: true
     prefer_single_quotes: true
     prefer_expression_function_bodies: true
     require_trailing_commas: true
+    sort_constructors_first: false
 
     # Safety / avoid common mistakes
     avoid_print: true
