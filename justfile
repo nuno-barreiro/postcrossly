@@ -4,6 +4,9 @@ deps:
 format:
     dart format .
 
+lint:
+    flutter analyze
+
 run-windows:
     flutter run -d windows
 
