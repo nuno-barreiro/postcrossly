@@ -1,3 +1,6 @@
+deps:
+    flutter pub get
+
 format:
     dart format .
 
